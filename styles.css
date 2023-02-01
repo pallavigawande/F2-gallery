@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+#form {
+  padding: 20px;
+  background-color: #695858;
+  width: 50%;
+  margin: 0 auto;
+}
+label {
+  font-weight: bold;
+}
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#submitBtn {
+  background-color: #4caf50;
+  color: rgb(39, 2, 2);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  border: color 4px;
+  border-radius: 5px;
+}
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-Group {
+  margin: 1.5rem;
+  font-size: 1.2rem;
+}
+#sumbitBtn {
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+#displayInfo {
+  margin: 2rem;
+}
+
+#info {
+  font-size: 1rem;
+}
+#diceScore {
+  margin: 1.5rem;
+}

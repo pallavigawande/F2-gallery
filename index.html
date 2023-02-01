@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>
+        <button id="img-1" onclick="openFormFunction()">
+          <img
+            class="img"
+            src="https://www.istockphoto.com/resources/images/PhotoFTLP/P4-JAN-iStock-1432854572.jpg"
+            alt="img1"
+          />
+        </button>
+      </div>
+
+      <div>
+        <button id="img-2" onclick="displayFormInfoFunction()">
+          <img
+            class="img"
+            src="https://www.w3schools.com/css/ocean.jpg"
+            alt="img2"
+          />
+        </button>
+      </div>
+
+      <div>
+        <button id="img-3" onclick="displayDiceWthScore()">
+          <img
+            class="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQIsQOq_VS5HMDT7fByPyg2MWbLlVBf0-yWA&usqp=CAU"
+            alt="img3"
+          />
+        </button>
+      </div>
+
+      <div>
+        <button id="img-4" onclick="generateCouponCodeFunction()">
+          <img
+            class="img"
+            src="https://www.pushengage.com/wp-content/uploads/2022/04/Coupon-Marketing-Strategy.png"
+            alt="img4"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!-- Form Group -->
+    <div class="form-Group hidden" id="form">
+      <label for="name">Name: </label>
+      <input type="text" id="name" required />
+      <br /><br />
+      <label for="userName">User Name: </label>
+      <input type="text" id="userName" required />
+      <br /><br />
+
+      <label for="password">password: </label>
+      <input type="password" id="password" required /><br /><br />
+
+      <button id="sumbitBtn" type="submit" onclick="submitForm()">
+        Submit
+      </button>
+    </div>
+
+    <div class="displayformInfo hidden" id="displayInfo">
+      <h2>Your name and user name</h2>
+      <br />
+      <span id="info"></span><br /><br />
+      <p>Now Click on next Image</p>
+    </div>
+
+    <div class="diceScore hidden" id="diceScore">
+      <p>left Attempts : <span id="attemptsLeft">0</span></p>
+      <br />
+      <div>
+        <button id="dice-Image" onclick="diceClick()">
+          <img
+            class="img"
+            src="https://toppng.com/uploads/preview/red-dice-png-transparent-image-red-dice-transparent-background-11563654974dkqvaqr5lv.png"
+            alt="diceImage"
+          /></button
+        ><br /><br />
+        <p>Remaining Dice Clicks: <span id="diceClicks">3</span></p>
+        <p>Your total score is: <span id="score">0</span></p>
+      </div>
+    </div>
+
+    <div>
+      <img
+        class="hidden"
+        id="congratsImage"
+        src="https://thumbs.dreamstime.com/b/illustration-calligraphic-inscription-congratulations-vector-element-design-illustration-calligraphic-inscription-149833255.jpg"
+        alt="congratsImage"
+      />
+    </div>
+    <div>
+      <img
+        class="hidden"
+        id="tryAgainImage"
+        src="https://i1.sndcdn.com/avatars-000490611378-ivdfi5-t500x500.jpg "
+        alt="tryAgainImage"
+        width="300"
+        height="300"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
